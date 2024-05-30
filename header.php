@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <header>
     
-    <img class="logo-place" src="assets/img/VFE-logo" alt="">
+  <a href="index.php"><img class="logo-place" src="assets/img/VFE-logo" alt=""></a>  
  <div class="header-position">
      <a href=""><li>Boek</li> </a>
     <a href=""><li>Service</li></a>
