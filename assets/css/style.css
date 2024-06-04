@@ -1,149 +1,166 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   border: none;
   list-style-type: none;
   font-family: "Roboto", sans-serif;
 }
-header{
-    display: flex;
-    font-size: 20px;
-    height: 80px;
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    background-color: white;
+body, html {
+  height: 100%;
+  margin: 0;
+}
+main {
+  background-image: url('assets/img/background-image1.png'); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  font-size: 20px;
+  height: 80px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: white;
+}
+.header-position {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  left: 150px;
+}
+.logo-place {
+  position: relative;
+  left: 50px;
+  width: 85%;
+}
+.nl-place {
+  position: relative;
+  left: 450px;
+  width: 3%;
+  height: 60%;
+  top: 22px;
 }
 li {
-    display: flex;
-    position: relative;
-    top: 25px;
-    border: 2px solid;
-    border-radius: 50px;
-    padding: 5px;
-    color: black;
+  display: flex;
+  position: relative;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 5px;
+  color: black;
 }
-.inlog-button li{
-border: 2px solid;
-height: 20px;
-position: relative;
-top: 30px;
-border-radius: 20px;
-left: 480px;
-padding: 5px;
-}
-.header-position{
-    display: flex;
-    gap: 60px;
-    position: relative;
-    left: 150px;
-}
-.logo-place{
-    position: relative;
-    left: 50px;
-    width: 85%;
-}
-.nl-place{
-position: relative;
-left: 450px;
-width: 3%;
-height: 60%;
-top: 22px;
+.inlog-button li {
+  border: 2px solid;
+  height: 20px;
+  position: relative;
+  top: 30px;
+  border-radius: 20px;
+  left: 480px;
+  padding: 5px;
 }
 .content {
-    padding: 16px;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-  }
-  .sticky + .content {
-    padding-top: 102px;
-  }
-.mail-footer{
-    width: 97px;
-    height: 127px;
-    background-color: #336A86;
-    border-radius: 50px;
-    position: relative;
-    left: 100px;
-    top: 40px;
-} 
-.mail-box{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 35px;
-    left: 13px;
+  padding: 16px;
 }
-.contact-footer{
+.sticky {
+  position: fixed;
+  top: 0;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
   position: relative;
-  padding-left: 220px;
-  display: flex;
-  justify-content: center;
-  color: #336A86;
-  top: 50px;
+
 }
-.login-button{
-  display: flex;
-  border: 2px solid  #336A86;
-  border-radius: 7px;
+.form-container input,
+.form-container select {
+  width: 95%;
   padding: 10px;
-  position:relative;
-  left: 250px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #0056b3;
+  width: 100%;
+}
+footer {
+  height: 200px;
   background-color: white;
-  bottom: 58px;
-  }
-  .e-mail-text{
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail-footer {
+  width: 97px;
+  height: 127px;
+  background-color: #336A86;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-footer {
+  color: #336A86;
+  margin-top: 20px;
+}
+.e-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.e-mail-text {
   border: 2px solid #336A86;
   border-radius: 7px;
   padding: 10px;
   width: 210px;
- 
-  }
-  .e-mail{
-    position: relative;
-    left: 220px;
-    bottom: 50px;
-    width: 100px;
-  }
-  form{
-    width: 300px;
-  }
-  .niek{
-    position: relative;
-    padding-left: 900px;
-    bottom: 200px;
-  }
-  h2{
-   position: relative;
-   display: flex;
-   justify-content: center;
-   right: 475px;
-   bottom: 100px;
-   width: 400px;
-  }
-  .first-backgroundimage{
-    width: 100%;
-  }
-  footer{
-    height: 200px;
-  }
-
-  .social-media{
-    position: relative;
-    display: flex;
-    padding-left: 410px;
-   top: 0px;
-   }
-   .block{
-   background-color: #81aec4;
-    width: 500px;
-    height: 500px;
   position: relative;
-  left: 510px;
-   border-radius: 40px;
-margin: 30px;
-   }
+  right: 330px;
+  top: 30px;
+}
+.login-button {
+  display: flex;
+  border: 2px solid #336A86;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  right: 90px;
+  bottom: 9px;
+}
+.niek {
+  margin-top: 20px;
+  text-align: center;
+}
+.social-media img {
+  margin: 0 5px;
+}
+#passengers{
+  width: 100%;
+}
+h2{
+  position: relative;
+  bottom: 30px;
+}

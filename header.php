@@ -9,7 +9,7 @@
     
   <a href="index.php"><img class="logo-place" src="assets/img/VFE-logo" alt=""></a>  
  <div class="header-position">
-     <a href=""><li>Boek</li> </a>
+     <a href="boeken.php"><li>Boeken</li> </a>
     <a href=""><li>Service</li></a>
     <a href=""><li>Inchecken</li></a>
 </div>
