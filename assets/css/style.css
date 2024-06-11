@@ -78,12 +78,12 @@ top: 22px;
   left: 13px;
 }
 .contact-footer{
-position: relative;
-padding-left: 220px;
-display: flex;
-justify-content: center;
-color: #336A86;
-top: 50px;
+  position: relative;
+  bottom: 60px;
+  right: 370px;
+  display: flex;
+  justify-content: center;
+  color: #336A86;
 }
 .login-button{
 display: flex;
@@ -113,44 +113,42 @@ form{
   width: 300px;
 }
 .niek{
+  color: #336A86;
+  display: flex;
   position: relative;
-  padding-left: 900px;
   bottom: 200px;
 }
-.footer-aandmelden{
- position: relative;
- display: flex;
- justify-content: center;
- right: 475px;
- bottom: 100px;
- width: 400px; 
+.niek h2{
+  display: flex;
+  position: relative;
+  top: 11px;
 }
-
 .first-backgroundimage{
   width: 100%;
 }
 footer{
   height: 200px;
+  
 }
 
 .social-media{
   position: relative;
-  display: flex;
-  padding-left: 410px;
- top: 0px;
- }
- .block{
- background-color: #81aec4;
   width: 500px;
-  height: 500px;
-position: relative;
-left: 510px;
- border-radius: 40px;
-margin: 30px;
+  display: flex;
+  padding-left: 900px;
+ }
+.social-media h2{
+  display: flex;
+}
+ .social-media-img{
+  display: flex;
+  position: relative;
+  top: 40px;
+  right: 335px;
  }
  .service-top{
   background-color: #336A86;
-  width: 100vw;
+  width: 100%;
   height: 250px;
   color: white;
 }
@@ -215,28 +213,28 @@ margin: 30px;
   justify-content: center;
   align-items: center;
   position: relative; 
-  left: 200px;
+  left: 189px;
 }
 #pijl-annuleren{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; 
-  left: 127px;
+  left: 112px;
 }
 #pijl-algemene-voorwaarden{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; 
-  left: 62.5px;
+  left: 45px;
 }
 #pijl-klachten{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; 
-  left: 212px;
+  left: 205px;
 }
 .contact-button{
   display: flex;
