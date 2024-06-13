@@ -60,7 +60,7 @@
         <div class="service-contact">
             <h2>Geen antwoord op je vraag gekregen?</h2>
             <a href="contact.php">
-            <div class="contact-button">
+            <div class="service-contact-button">
                 <h3>
                  Neem contact op
                 </h3>

@@ -12,6 +12,7 @@
      <a href="boeken.php"><li>Boeken</li> </a>
     <a href="service.php"><li>Service</li></a>
     <a href=""><li>Inchecken</li></a>
+    <a href="contact.php"><li>Contact</li></a>
 </div>
     <img class="nl-place" src="assets/img/NL-vlag" alt="">
    <div class="inlog-button"><a href=""><li>Mijn VFE</li></a></div> 
