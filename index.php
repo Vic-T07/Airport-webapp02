@@ -10,11 +10,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include('connection.php') ?>
+    <?php include('connection.php');
+    include('header.php'); ?>
 <main style="background-image: url('assets/img/background-image1.png'); background-size: cover;">
-    <?php include('header.php'); ?>
     <div class="form-container">
-        <form action="#" method="get">
+        <form action="" method="get">
             <label for="from">Waar wil je heen?</label>
             <input type="text" id="from" name="from" placeholder="Amsterdam, Nederland" required>
             <input type="text" id="to" name="to" placeholder="Verona, Italië" required>
