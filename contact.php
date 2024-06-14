@@ -9,8 +9,9 @@
 
 <body>
 <!-- <?php include('connection.php') ?> -->
-<main style="background-image: url('assets/img/background-image-contact.png'); background-size: cover;">
 <?php include ('header.php'); ?>
+<main style="background-image: url('assets/img/background-image-contact.png'); background-size: cover;">
+
 <div class="contact-form-">
     <div class="contact-form">
         <form action="#" method="get">

@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
-text-decoration: none;
-border: none;
-list-style-type: none;
-font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  border: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
 }
-header{
+header {
   display: flex;
   font-size: 20px;
   height: 80px;
@@ -24,32 +24,28 @@ li {
   padding: 5px;
   color: black;
 }
-.inlog-button li{
-border: 2px solid;
-height: 20px;
-position: relative;
-top: 30px;
-border-radius: 20px;
-left: 480px;
-padding: 5px;
+.inlog-button li {
+  position: relative;
+  left: 600px;
 }
-.header-position{
+
+.header-position {
   display: flex;
   gap: 60px;
   position: relative;
   left: 150px;
 }
-.logo-place{
+.logo-place {
   position: relative;
   left: 50px;
   width: 85%;
 }
-.nl-place{
-position: relative;
-left: 450px;
-width: 3%;
-height: 60%;
-top: 22px;
+.nl-place {
+  position: relative;
+  left: 450px;
+  width: 3%;
+  height: 60%;
+  top: 22px;
 }
 .content {
   padding: 16px;
@@ -61,107 +57,123 @@ top: 22px;
 .sticky + .content {
   padding-top: 102px;
 }
-.mail-footer{
+.mail-footer {
   width: 97px;
   height: 127px;
-  background-color: #336A86;
+  background-color: #336a86;
   border-radius: 50px;
   position: relative;
   left: 100px;
   top: 40px;
-} 
-.mail-box{
+}
+.mail-box {
   display: flex;
   justify-content: center;
   position: relative;
   top: 35px;
   left: 13px;
 }
-.contact-footer{
+.contact-footer {
   position: relative;
-  bottom: 60px;
-  right: 370px;
+  left: 220px;
+  bottom: 55px;
+  color: #336a86;
+  width: 400px;
+}
+.aanmeld-button {
   display: flex;
+  width: 120px;
+  position: relative;
+  left: 240px;
+  bottom: 55px;
+  border-radius: 7px;
+  height: 35px;
   justify-content: center;
-  color: #336A86;
 }
-.login-button{
-display: flex;
-border: 2px solid  #336A86;
-border-radius: 7px;
-padding: 10px;
-position:relative;
-left: 250px;
-background-color: white;
-bottom: 58px;
+.inlog-button {
+  border-radius: 7px;
+  position: relative;
+  left: 460px;
+  background-color: white;
 }
-.e-mail-text{
+.e-mail-text {
   display: flex;
-border: 2px solid #336A86;
-border-radius: 7px;
-padding: 10px;
-width: 210px;
-
+  border: 2px solid #336a86;
+  border-radius: 7px;
+  padding: 10px;
+  width: 210px;
 }
-.e-mail{
+.e-mail {
   position: relative;
   left: 220px;
   bottom: 50px;
   width: 100px;
 }
-.e-mail form{
+.e-mail form {
   width: 300px;
 }
-.niek{
-  color: #336A86;
-  display: flex;
+.niek {
   position: relative;
+  left: 600px;
   bottom: 200px;
+  color: #336a86;
+  width: 400px;
 }
-.niek h2{
+.sociale-media {
   display: flex;
   position: relative;
-  top: 11px;
+  left: 400px;
 }
-.first-backgroundimage{
-  width: 100%;
+.sociale-media-img {
+  position: relative;
+  left: 200px;
 }
-footer{
-  height: 200px;
-  
+.footer-aandmelden {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  right: 475px;
+  bottom: 100px;
+  width: 400px;
 }
 
-.social-media{
-  position: relative;
-  width: 500px;
-  display: flex;
-  padding-left: 900px;
- }
-.social-media h2{
-  display: flex;
-}
- .social-media-img{
-  display: flex;
-  position: relative;
-  top: 40px;
-  right: 335px;
- }
- .service-top{
-  background-color: #336A86;
+.first-backgroundimage {
   width: 100%;
+}
+footer {
+  height: 200px;
+}
+
+.social-media {
+  position: relative;
+  display: flex;
+  position: relative;
+  left: 230px;
+}
+.block {
+  background-color: #81aec4;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 510px;
+  border-radius: 40px;
+  margin: 30px;
+}
+.service-top {
+  background-color: #336a86;
   height: 250px;
   color: white;
 }
-.service-top h1{
+.service-top h1 {
   display: flex;
   justify-content: center;
   position: relative;
   top: 110px;
 }
-.service-bottom{
+.service-bottom {
   display: flex;
   justify-content: space-evenly;
-  color: #336A86;
+  color: #336a86;
   position: relative;
   top: 20px;
 }
@@ -174,110 +186,111 @@ footer{
 .rotate-90 {
   transform: rotate(90deg);
   transition: transform 0.5s ease;
-} 
-.myButton img{
+}
+.myButton img {
   background: none;
 }
-.service-inchecken{
+.service-inchecken {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   max-width: 300px;
 }
-.service-annuleren{
+.service-annuleren {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   max-width: 300px;
 }
-.service-algemene-voorwaarden{
+.service-algemene-voorwaarden {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   max-width: 300px;
 }
-.service-klachten{
+.service-klachten {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   max-width: 300px;
 }
-.service{
+.service {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
-#pijl-inchecken{
+#pijl-inchecken {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
-  left: 189px;
+  position: relative;
+  left: 188px;
 }
-#pijl-annuleren{
+#pijl-annuleren {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
-  left: 112px;
+  position: relative;
+  left: 110px;
 }
-#pijl-algemene-voorwaarden{
+#pijl-algemene-voorwaarden {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
   left: 45px;
 }
-#pijl-klachten{
+#pijl-klachten {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
-  left: 205px;
+  position: relative;
+  left: 204px;
 }
-.service-contact-button{
+.service-contact-button {
   display: flex;
   border-style: solid;
-  border-color: #336A86;
+  border-color: #336a86;
   border-radius: 7px;
   width: 160px;
   height: 35px;
-  color: #336A86;
+  color: #336a86;
+  justify-content: center;
 }
-.service-contact-button h3{
+.service-contact-button h3 {
   display: flex;
   align-items: center;
 }
-.service-contact{
+.service-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.service-vragen{
+.service-vragen {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.service-lijn{
+.service-lijn {
   display: flex;
-  background-color: #ACCFE1;
+  background-color: #accfe1;
   width: 345px;
   height: 1px;
   margin-top: 5px;
 }
-.contact-form{
+.contact-form {
   display: flex;
   background-color: rgba(255, 255, 255, 0.8);
   width: 510px;
   height: 420px;
-  color: #336A86;
+  color: #336a86;
   border-radius: 15px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.contact-form input{
+.contact-form input {
   width: 460px;
   height: 40px;
   border-radius: 7px;
@@ -285,12 +298,12 @@ footer{
   justify-content: center;
   margin: 10px;
 }
-#contact-bericht{
+#contact-bericht {
   height: 200px;
 }
-.contact-button{
-  background-color: #ACCFE1;
-  color: #336A86;
+.contact-button {
+  background-color: #accfe1;
+  color: #336a86;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -303,16 +316,182 @@ footer{
   position: relative;
   left: 10px;
 }
-.contact-form h2{
+.contact-form h2 {
   display: flex;
   justify-content: center;
   margin-top: 5px;
+  width: 100px;
 }
-.contact-form-{
+.contact-form- {
   display: flex;
   justify-content: center;
   margin: 50px;
 }
-#tussen{
+#tussen {
   height: 20px;
+}
+
+.form-container input,
+.form-container select {
+  width: 375px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-container button {
+  width: 395px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #0056b3;
+}
+.form-container button{
+  position: relative;
+  top: 15px;
+}
+#passengers {
+  width: 395px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 375px;
+}
+
+/* Set a style for all buttons */
+.login-button button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  height: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.img-container {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  display: flex;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }

@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>VFE Airways Service</title>
 </head>
-<?php include ('header.php'); ?>
+
+<?php include ('connection.php');
+include ('header.php'); ?>
 <body>
     <div class="service-top">
         <h1>Hoe kunnen wij helpen?</h1>
@@ -68,9 +70,7 @@
             </a>
         </div>
     </div>
-<?php
-include('footer.php');
-?>
+
 
 </body>
 </html>
@@ -132,3 +132,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+<?php include ('footer.php')?>
