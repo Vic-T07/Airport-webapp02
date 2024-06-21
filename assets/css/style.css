@@ -305,17 +305,15 @@ footer {
 .contact-button {
   background-color: #accfe1;
   color: #336a86;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 5px;
   width: 460px;
   height: 40px;
   border-radius: 7px;
   align-items: center;
   position: relative;
   left: 10px;
+  top: 5px;
 }
 .contact-form h2 {
   display: flex;
@@ -401,11 +399,6 @@ button:hover {
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
 }
 
 .container {
@@ -536,4 +529,44 @@ margin: 3px;
   .cancelbtn {
     width: 100%;
   }
+}
+.inchecken-form {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 510px;
+  height: 320px;
+  color: #336a86;
+  border-radius: 15px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.inchecken-form input {
+  width: 460px;
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.inchecken-button {
+  background-color: #accfe1;
+  color: #336a86;
+  display: flex;
+  justify-content: center;
+  width: 460px;
+  height: 40px;
+  border-radius: 7px;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+.inchecken-form h2 {
+  display: flex;
+  justify-content: center;
+}
+.inchecken-form- {
+  display: flex;
+  justify-content: center;
 }
