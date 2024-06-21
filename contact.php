@@ -16,9 +16,9 @@
     <div class="contact-form">
         <form action="#" method="get">
             <h2>Contact</h2>
-            <input type="text" id="contact-naam" placeholder="Naam " required>
-            <input type="e-mail" id="contact-mail" placeholder="E-mail" required>
-            <input type="text" id="contact-bericht" placeholder="Bericht" required>
+            <input type="text" id="contact-naam" placeholder=" Naam " required>
+            <input type="e-mail" id="contact-mail" placeholder=" E-mail" required>
+            <input type="text" id="contact-bericht" placeholder=" Bericht" required>
             <button type="submit" class="contact-button">Verzenden</button>
         </form>
     </div>

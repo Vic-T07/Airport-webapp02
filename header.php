@@ -11,7 +11,7 @@
  <div class="header-position">
      <a href="boeken.php"><li>Boeken</li> </a>
     <a href="service.php"><li>Service</li></a>
-    <a href=""><li>Inchecken</li></a>
+    <a href="inchecken.php"><li>Inchecken</li></a>
     <a href="contact.php"><li>Contact</li></a>
 </div>
     <img class="nl-place" src="assets/img/NL-vlag" alt="">
@@ -22,7 +22,7 @@
     <form class="modal-content animate" action="login.php" method="post">
         <div class="img-container">
             <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img class="avatar" src="assets/img/logo.png" alt="Avatar">
+            <img class="avatar" src="assets/img/VFE-logo.png" alt="Avatar">
         </div>
         <div class="container">
             <label for="username"><b>Username</b></label>
