@@ -7,14 +7,14 @@
 <body>
     <header>
     
-  <a href="index.php"><img class="logo-place" src="assets/img/VFE-logo" alt=""></a>  
+  <a href="index.php"><img class="logo-place" src="assets/img/Logo.png" alt=""></a>  
  <div class="header-position">
      <a href="boeken.php"><li>Boeken</li> </a>
     <a href="service.php"><li>Service</li></a>
-    <a href=""><li>Inchecken</li></a>
-    <a href="contact.php"><li>Contact</li></a>
+    <a href="admin.php"><li>Inchecken</li></a>
+   
 </div>
-    <img class="nl-place" src="assets/img/NL-vlag" alt="">
+    <img class="nl-place" src="assets/img/image 2.png" alt="">
  <div class="login-button">
    <li class="inlog-button" onclick="document.getElementById('loginModal').style.display='block'">Mijn VFE</li>
 </div>

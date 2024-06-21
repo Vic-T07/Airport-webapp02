@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <footer>
-    <div class="mail-footer"><img class="mail-box" src="assets/img/mail-footer" alt=""></div>
+    <div class="mail-footer"><img class="mail-box" src="assets/img/envelope-solid1.png" alt=""></div>
     <div class="contact-footer"><h2>Meld je aan voor de nieuwsbrief!</h2></div>
     <div class="e-mail">
     <form action="/action_page.php">
@@ -16,11 +16,11 @@
 </div>
 <div class="niek"><h2 class="social-media">Volg ons op social media</h2>
   <div class="sociale-media-img">
-    <img src="assets/img/x-logo" alt="X">
-    <img src="assets/img/facebook-logo" alt="Facebook">
-    <img src="assets/img/instagram-logo" alt="Instagram">
-    <img src="assets/img/whatsapp-logo" alt="Whatsapp">
-    <img src="assets/img/youtube-logo" alt="Youtube">
+<div class="img-block"><img class="img" src="assets/img/x-twitter1.png" alt="X"></div> 
+<div class="img-block"><img class="img" src="assets/img/facebook-f1.png" alt="Facebook"></div>   
+<div class="img-block"><img class="img" src="assets/img/instagram1.png" alt="Instagram"></div>  
+<div class="img-block"><img class="img" src="assets/img/whatsapp1.png" alt="Whatsapp"></div>  
+<div class="img-block"><img class="img" src="assets/img/youtube1.png" alt="Youtube"></div>  
   </div>
 </div>
 

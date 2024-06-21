@@ -2,7 +2,7 @@
 
 include ('Connection.php');
 
-$stmt = $conn->prepare("SELECT * FROM users WHERE gebruikersnaam=:gebruikersnaam AND wachtwoord=:wachtwoord");
+$stmt = $conn->prepare("SELECT * FROM users WHERE gebruikersnaam=:username AND wachtwoord=:wachtwoord");
 $stmt->bindParam(':gebruikersnaam', $_POST['uname']);
 $stmt->bindParam(':wachtwoord', $_POST['psw']);
 

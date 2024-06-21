@@ -43,7 +43,6 @@ li {
 .nl-place {
   position: relative;
   left: 450px;
-  width: 3%;
   height: 60%;
   top: 22px;
 }
@@ -127,6 +126,8 @@ li {
 .sociale-media-img {
   position: relative;
   left: 200px;
+  display: flex;
+  
 }
 .footer-aandmelden {
   position: relative;
@@ -371,7 +372,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
-  height: 375px;
+  height: 300px;
 }
 
 /* Set a style for all buttons */
@@ -484,7 +485,48 @@ span.psw {
     transform: scale(1);
   }
 }
-
+.img-block{
+  display: flex;
+background-color: #336a86;
+width: 50px;
+height: 50px;
+border-radius: 30px;
+padding: 5px;
+margin: 3px;
+}
+.img{
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.ticket {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.ticket img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.ticket h2 {
+  color: #336a86;
+  margin: 10px 0;
+}
+.ticket p {
+  margin: 5px 0;
+  color: #555;
+}
+.ticket .price {
+  color: #336a86;
+  font-weight: bold;
+  margin-top: 10px;
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
