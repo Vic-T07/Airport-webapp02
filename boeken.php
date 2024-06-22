@@ -13,12 +13,23 @@ include ('header.php');  ?></header>
 <body>
     <div class="ticket">
         <img src="assets/img/image9.png" alt="Verona">
-        <h2>Verona, Italië</h2>
-        <p>Vertrek: 10:00</p>
-        <p>17-05-2024</p>
-        <p>1 u 40 min</p>
-        <p>retour ticket</p>
-        <p class="price">vanaf €300</p>
+            <?php
+            include("gettravels.php");
+                if(!empty($result)){
+
+                    $first_travel = $result[0];
+
+                    echo '<h2>' . $first_travel['to_city'],", ",  $first_travel['to_country']. '</h2>';
+                    echo '<p>' . "Departure: TBA" . '<p>';
+                    echo '<p>' . $first_travel['date'] . '</p>';
+                    echo '<p>' . $first_travel['travel_time'] . '</p>';
+                    echo '<p>' . "Retour ticket" . '<p>';
+                    echo '<h2>' ."vanaf €", $first_travel['cost'] . '</h2>';
+                }
+                else{
+                    echo 'No Travel';
+                }
+    ?>
     </div>
     <div class="ticket">
         <img src="assets/img/image9.png" alt="Verona">
