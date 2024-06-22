@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main>
         <section class="admin-travel-config">
             <h2>Update Travel</h2>
-            <form action="<?php echo ($_SERVER["updatetravel.php"]) . "?travel_id=" . $travel_id; ?>" method="post">
+            <form action="<?php echo ($_SERVER["PHP_SELF"]) . "?travel_id=" . $travel_id; ?>" method="post">
                 <input type="hidden" id="action" name="action" value="update">
 
                 <div class="admin-form-change">

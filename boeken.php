@@ -28,7 +28,7 @@
                 foreach ($result as $travel) {
             ?>
                     <div class="ticket">
-                        <img src="<?php echo ($travel['image_url']); ?>" alt=>
+                        <img src="<?php echo ($travel['image_url']); ?>" alt="er is geen foto beschikbaar">
                         <h2><?php echo ($travel['to_city'] . ', ' . $travel['to_country']); ?></h2>
                         <p>Departure: TBA</p>
                         <p><?php echo $travel['date']; ?></p>

@@ -51,7 +51,7 @@ try {
     </section>
     <section class="admin-travel-config">
         <h2>Invoegen reizen:</h2>
-        <form action="process_travel.php" method="post">
+        <form action="addtravel.php" method="post">
             <input type="hidden" id="action" name="action" value="insert">
 
             <div class="admin-form-change">
@@ -120,8 +120,8 @@ try {
                         <p><?php echo $travel['travel_time']; ?></p>
                         <p>prijs: <?php echo $travel['cost']; ?></p>
                         <div>
-                    <a href="updatetravel.php?travel_id=<?php echo $travel['travel_id']; ?>" class="admin-update-travel">Update</a>
-                    <a href="deletetravel.php?travel_id=<?php echo $travel['travel_id']; ?>" class="admin-delete-travel">Delete</a>
+                    <a href="updatetravel.php?travel_id=<?php echo $travel['travel_id']; ?>" class="admin-update-delete">Update</a>
+                    <a href="deletetravel.php?travel_id=<?php echo $travel['travel_id']; ?>" class="admin-update-delete">Delete</a>
                 </div>
                     </div>
             <?php

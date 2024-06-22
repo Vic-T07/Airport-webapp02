@@ -658,7 +658,12 @@ margin: 3px;
 .all-travels{
   display: flex;
   gap: 30px;
+  padding-top: 20px;
 }
 .all-travels p{
 margin: 0;
+}
+.admin-update-delete{
+  border: 1px solid black;
+  padding: 3px;
 }
