@@ -1,35 +1,36 @@
 <?php
+session_start();
 
-include ('Connection.php');
+include ('Connection.php'); 
 
-$stmt = $conn->prepare("SELECT * FROM users WHERE gebruikersnaam=:username AND wachtwoord=:wachtwoord");
-$stmt->bindParam(':gebruikersnaam', $_POST['uname']);
-$stmt->bindParam(':wachtwoord', $_POST['psw']);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-$result = $stmt->execute();
-
-$data = $stmt->fetch();
-
-if ($result) {
-   session_start();
-    $_SESSION['users'] = $data['gebruikersnaam'];
-    $_SESSION['rol'] = $data['rol'];
-
-} else {
-    echo 'niet';
-}
-if ($result) {
-    $_SESSION['logged_in'] = true;
-    $_SESSION['username'] = $data['username'];
     
-    if ($data['admin'] == 1) {
-        $_SESSION['admin'] = 'admin';
-        header("Location: service.php");
-    } else {
-      
-    }
-    exit();
-} else {
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email=:email AND password=:password");
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':password', $password);
+    
+    $stmt->execute();
 
-    echo "Ongeldige gebruikersnaam of wachtwoord.";
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        $_SESSION['logged_in'] = true;
+        $_SESSION['email'] = $user['email']; 
+
+        if ($user['admin'] == 1) {
+            $_SESSION['admin'] = true; 
+            header("Location: admin.php"); 
+            exit();
+        } else {
+            // Redirect to regular user page or handle as needed
+            // Example: header("Location: user_dashboard.php");
+        }
+    } else {
+        echo "Invalid email or password."; 
+    }
+} else {
 }
+

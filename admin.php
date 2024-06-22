@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'config.php'; // Ensure this file has correct database connection details
 
 // Voorbeeldquery: Gebruikers uit 'users' tabel ophalen
 try {
