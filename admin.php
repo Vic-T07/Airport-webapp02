@@ -50,7 +50,7 @@ try {
         <?php endif; ?>
     </section>
     <section class="admin-travel-config">
-        <h2>Aanpassen reizen:</h2>
+        <h2>Invoegen reizen:</h2>
         <form action="process_travel.php" method="post">
             <input type="hidden" id="action" name="action" value="insert">
 
@@ -105,6 +105,33 @@ try {
             </div>
         </form>
     </section>
+    <section class="admin-travel-config">
+            <h2>Aanpassen reizen</h2>
+            <div class="admin-travel-list">
+            <?php
+            include("gettravels.php");
+
+            if (!empty($result)) {
+                foreach ($result as $travel) {
+            ?>
+                    <div class="all-travels">
+                        <p><?php echo ($travel['to_city'] . ', ' . $travel['to_country']); ?></p>
+                        <p><?php echo $travel['date']; ?></p>
+                        <p><?php echo $travel['travel_time']; ?></p>
+                        <p>prijs: <?php echo $travel['cost']; ?></p>
+                        <div>
+                    <a href="updatetravel.php?travel_id=<?php echo $travel['travel_id']; ?>" class="admin-update-travel">Update</a>
+                    <a href="deletetravel.php?travel_id=<?php echo $travel['travel_id']; ?>" class="admin-delete-travel">Delete</a>
+                </div>
+                    </div>
+            <?php
+                }
+            } else {
+                echo 'No Travel';
+            }
+            ?>
+            </div>
+        </section>
 
 </body>
 

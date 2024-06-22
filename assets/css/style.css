@@ -627,6 +627,7 @@ margin: 3px;
 }
 .admin-pagina{
   display: flex;
+  flex-wrap: wrap;
 }
 .admin-user-info{
   width: 50%;
@@ -653,4 +654,11 @@ margin: 3px;
   flex: 1;
   border: 1px solid black;
   padding: 20px;
+}
+.all-travels{
+  display: flex;
+  gap: 30px;
+}
+.all-travels p{
+margin: 0;
 }
