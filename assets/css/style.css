@@ -363,6 +363,9 @@ main {
   align-items: center;
   height: 100vh;
 }
+#ticketpagina{
+  height: auto;
+}
 
 .form-container {
   background-color: rgba(255, 255, 255, 0.8);
@@ -494,6 +497,15 @@ margin: 3px;
   top: 5px;
   left: 5px;
 }
+.tickets-container{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+}
 .ticket {
   background-color: white;
   border-radius: 15px;
@@ -503,7 +515,7 @@ margin: 3px;
   text-align: center;
 }
 .ticket img {
-  width: 100%;
+  max-width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
