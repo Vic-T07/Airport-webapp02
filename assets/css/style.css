@@ -585,7 +585,7 @@ margin: 3px;
   font-weight: bold;
 }
 .user-table{
-  width: 50%;
+  width: 100%;
   border-collapse: collapse;
 }
 .user-table th{
@@ -624,4 +624,33 @@ margin: 3px;
   text-decoration: none;
   border-radius: 5px;
   margin-right: 10px;
+}
+.admin-pagina{
+  display: flex;
+}
+.admin-user-info{
+  width: 50%;
+}
+.admin-travel-config form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.admin-form-change {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-form-change label {
+  font-size: larger;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.admin-form-change input {
+  flex: 1;
+  border: 1px solid black;
+  padding: 20px;
 }
