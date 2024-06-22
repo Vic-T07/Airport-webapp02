@@ -8,7 +8,7 @@
 </head>
 <header><?php include ('connection.php');
 include ('header.php');  ?></header>
-<main id="ticketpagina" style="background-image: url('assets/img/image8.png'); background-size: auto;">
+<main id="ticketpagina" style="background-image: url('assets/img/image8.png'); background-size: cover;">
 
 <body>
 <div class="tickets-container">

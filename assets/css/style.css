@@ -582,3 +582,6 @@ margin: 3px;
   display: flex;
   justify-content: center;
 }
+.user-info{
+  font-weight: bold;
+}

@@ -1,9 +1,8 @@
 <?php
-require_once 'config.php'; // Ensure this file has correct database connection details
+require_once 'connection.php'; 
 
-// Voorbeeldquery: Gebruikers uit 'users' tabel ophalen
 try {
-    $stmt = $pdo->query("SELECT * FROM users");
+    $stmt = $conn->query("SELECT * FROM users");
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch(PDOException $e) {
     error_log("Fout bij het ophalen van gebruikers: " . $e->getMessage());
@@ -15,18 +14,32 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Admin Panel</title>
 </head>
 <body>
     <h2>Gebruikers:</h2>
     <?php if (!empty($users)) : ?>
-        <ul>
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
             <?php foreach ($users as $user) : ?>
-                <li><?= htmlspecialchars($user['username']) . ' - ' . htmlspecialchars($user['email']); ?></li>
+                <tr>
+                    <td><?= $user['user_id']; ?></td>
+                    <td><?= $user['username']; ?></td>
+                    <td><?= $user['email']; ?></td>
+                </tr>
             <?php endforeach; ?>
-        </ul>
-    <?php else : ?>
-        <p>Geen gebruikers gevonden.</p>
-    <?php endif; ?>
+        </tbody>
+    </table>
+<?php else : ?>
+    <p>Geen gebruikers gevonden.</p>
+<?php endif; ?>
 </body>
 </html>
