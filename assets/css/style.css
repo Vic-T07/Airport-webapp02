@@ -3,7 +3,6 @@
   padding: 0;
   text-decoration: none;
   border: none;
-  list-style-type: none;
   font-family: "Roboto", sans-serif;
 }
 header {
@@ -584,4 +583,45 @@ margin: 3px;
 }
 .user-info{
   font-weight: bold;
+}
+.user-table{
+  width: 50%;
+  border-collapse: collapse;
+}
+.user-table th{
+  text-align: left;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+.user-table td{
+  text-align: left;
+  border: 1px solid #000;
+}
+.logout-button {
+  background-color: #fefefe; 
+  color: black;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  left: 600px;
+}
+
+.logout-button:hover {
+  background-color: #accfe1;
+}
+
+.username-display {
+  position: relative;
+  left: 450px;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  cursor: default;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
 }

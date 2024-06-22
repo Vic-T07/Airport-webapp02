@@ -24,6 +24,8 @@ try {
         <thead>
             <tr>
                 <th>User ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
                 <th>Username</th>
                 <th>Email</th>
             </tr>
@@ -32,6 +34,8 @@ try {
             <?php foreach ($users as $user) : ?>
                 <tr>
                     <td><?= $user['user_id']; ?></td>
+                    <td><?= $user['first_name']; ?></td>
+                    <td><?= $user['last_name']; ?></td>
                     <td><?= $user['username']; ?></td>
                     <td><?= $user['email']; ?></td>
                 </tr>
