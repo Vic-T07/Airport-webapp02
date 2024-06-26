@@ -349,7 +349,7 @@ footer {
 .form-container button:hover {
   background-color: #0056b3;
 }
-.form-container button{
+.form-container button {
   position: relative;
   top: 15px;
 }
@@ -362,7 +362,7 @@ main {
   align-items: center;
   height: 100vh;
 }
-#ticketpagina{
+#ticketpagina {
   height: auto;
 }
 
@@ -480,23 +480,23 @@ span.psw {
     transform: scale(1);
   }
 }
-.img-block{
+.img-block {
   display: flex;
-background-color: #336a86;
-width: 50px;
-height: 50px;
-border-radius: 30px;
-padding: 5px;
-margin: 3px;
+  background-color: #336a86;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 3px;
 }
-.img{
+.img {
   width: 80%;
   height: 80%;
   position: relative;
   top: 5px;
   left: 5px;
 }
-.tickets-container{
+.tickets-container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -508,7 +508,7 @@ margin: 3px;
 .ticket {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
   padding: 20px;
   text-align: center;
@@ -581,24 +581,24 @@ margin: 3px;
   display: flex;
   justify-content: center;
 }
-.user-info{
+.user-info {
   font-weight: bold;
 }
-.user-table{
+.user-table {
   width: 100%;
   border-collapse: collapse;
 }
-.user-table th{
+.user-table th {
   text-align: left;
   border: 1px solid #000;
   font-weight: bold;
 }
-.user-table td{
+.user-table td {
   text-align: left;
   border: 1px solid #000;
 }
 .logout-button {
-  background-color: #fefefe; 
+  background-color: #fefefe;
   color: black;
   padding: 10px 20px;
   margin-left: 10px;
@@ -617,20 +617,29 @@ margin: 3px;
 .username-display {
   position: relative;
   left: 450px;
-  padding: 10px;
   background-color: transparent;
   color: black;
-  cursor: default;
+  cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  margin-right: 10px;
 }
-.admin-pagina{
+.admin-pagina {
   display: flex;
   flex-wrap: wrap;
 }
-.admin-user-info{
-  width: 50%;
+.admin-user-info {
+  width: 80%;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.admin-travel-config{
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+#update-delete{
+  left: 100px;
 }
 .admin-travel-config form {
   display: flex;
@@ -655,15 +664,101 @@ margin: 3px;
   border: 1px solid black;
   padding: 20px;
 }
-.all-travels{
+.all-travels {
   display: flex;
   gap: 30px;
   padding-top: 20px;
 }
-.all-travels p{
-margin: 0;
+.all-travels p {
+  margin: 0;
 }
-.admin-update-delete{
+.admin-update-delete {
   border: 1px solid black;
   padding: 3px;
 }
+/* Modal Content/Box */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animate {
+  animation: zoom 0.6s
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.container {
+  padding: 20px;
+}
+
+.container input[type=text],
+.container input[type=email],
+.container input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.container button {
+  background-color: #336a86;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container button:hover {
+  opacity: 0.8;
+}
+
+.psww {
+  text-align: center;
+  font-size: 18px;
+}
+

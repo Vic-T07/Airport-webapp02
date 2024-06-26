@@ -105,7 +105,7 @@ try {
             </div>
         </form>
     </section>
-    <section class="admin-travel-config">
+    <section class="admin-travel-config" id="update-delete">
             <h2>Aanpassen reizen</h2>
             <div class="admin-travel-list">
             <?php
