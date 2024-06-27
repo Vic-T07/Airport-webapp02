@@ -22,7 +22,11 @@
     }
   </script>
 </head>
-
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+?>
 <body>
   <header>
     <a href="index.php"><img class="logo-place" src="assets/img/Logo.png" alt=""></a>

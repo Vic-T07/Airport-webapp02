@@ -1,5 +1,6 @@
 <?php
 require_once 'connection.php';
+include('header.php');
 
 try {
     $stmt = $conn->query("SELECT * FROM users");
